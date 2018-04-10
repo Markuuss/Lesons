@@ -3,12 +3,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:HamburgerMenu="clr-namespace:HamburgerMenu;assembly=HamburgerMenu"
         xmlns:local="clr-namespace:Собственное_прриложение"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Работа с файлами" HorizontalAlignment="Left" Margin="189,127,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
-        <Button Content="Работа с изображением" HorizontalAlignment="Left" Margin="189,161,0,0" VerticalAlignment="Top" Width="144"/>
-
+        
+            <Button Content="Работа с файлами" HorizontalAlignment="Left" Margin="189,127,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click" Name="Work_file">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Работа с файлами, папками, шрифтами
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Content="Работа с изображением" HorizontalAlignment="Left" Margin="189,161,0,0" VerticalAlignment="Top" Width="144">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Работа с изображением.
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+       
+        <HamburgerMenu:HamburgerMenu Name="HambMenu" MenuIconColor="#87ae4b" SelectionIndicatorColor="#87ae4b" Background="#1e2023" MenuItemForeground="WhiteSmoke" HorizontalAlignment="Left">
+            <HamburgerMenu:HamburgerMenuItem Name="mainButtonHamb" Height="40" Background="#aed86e" Text="Работа с файлами" />
+            <HamburgerMenu:HamburgerMenuItem Name="groupButtonHamb"  Height="40" Background="#aed86e" Text="Работа с изображениями" />
+            <HamburgerMenu:HamburgerMenuItem Name="PostQueue" Height="40" Background="#aed86e" Text="История постов" />
+            <HamburgerMenu:HamburgerMenuItem Name="exitAccHamb" PreviewMouseLeftButtonUp="exitAccHamb_PreviewMouseLeftButtonUp"  Height="40" Background="#aed86e" Text="Выход" Selected="exitAccHamb_Selected"/>
+            </HamburgerMenu:HamburgerMenu>
     </Grid>
 </Window>

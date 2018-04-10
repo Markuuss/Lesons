@@ -108,5 +108,20 @@ namespace Собственное_прриложение
             var papka_delete = openFileDialog.FileName;
             Directory.Delete(papka_delete,true);
         }
+
+        private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void Shrift(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Size(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

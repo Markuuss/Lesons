@@ -8,7 +8,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -26,16 +25,32 @@ namespace Собственное_прриложение
         public MainWindow()
         {
             InitializeComponent();
+           
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
         }
+        public void Idontnow()
+        {
+            
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             Text text = new Text();
             text.Show();
+        }
+
+        private void exitAccHamb_Selected(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void exitAccHamb_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -18,8 +18,12 @@
                 <MenuItem Header="Создать папку" Name="Create_Papc" Click="Create_Papc1"></MenuItem>
                 <MenuItem Header="Удалит папку" Name="Delete" Click="Delete1_Papka"></MenuItem>
             </MenuItem>
+            <MenuItem Header="Работа с шрифтами" >
+                <MenuItem Header="Создать папку" Name="Shrif" Click="Shrift"></MenuItem>
+                <MenuItem Header="Удалит папку" Name="Size1" Click="Size"></MenuItem>
+            </MenuItem>
         </Menu>
-        <TextBox HorizontalAlignment="Left" Height="144" Margin="0,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="344" Name="TextBox1"/>
+        <TextBox HorizontalAlignment="Left" Height="144" Margin="0,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="344" Name="TextBox1" TextChanged="TextBox1_TextChanged"/>
         <Button Content="Сохранить" HorizontalAlignment="Left" Margin="231,160,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click" Height="53"/>
         <Button Content="Изменить" HorizontalAlignment="Left" Margin="0,160,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.542,0.61" Height="53"/>
     </Grid>
