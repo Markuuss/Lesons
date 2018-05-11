@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Кинотеатор
 {
     /// <summary>
-    /// Логика взаимодействия для Time_Session.xaml
+    /// Логика взаимодействия для Time_Seans.xaml
     /// </summary>
-    public partial class Time_Session : Window
+    public partial class Time_Seans : Page
     {
-        public Time_Session()
+        public Time_Seans()
         {
             InitializeComponent();
         }

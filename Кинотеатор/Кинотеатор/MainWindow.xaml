@@ -8,14 +8,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="568.4" Width="725" Background="#1e2023" ResizeMode="NoResize">
     <Grid>
-        <Frame Name="Frame" HorizontalAlignment="Left" Height="538" VerticalAlignment="Top" Width="669" Margin="49,0,0,0" />
-        <HamburgerMenu:HamburgerMenu Name="HambMenu" MenuIconColor="#87ae4b" SelectionIndicatorColor="#87ae4b" Background="#1e2023" MenuItemForeground="WhiteSmoke" HorizontalAlignment="Left" Margin="-1,0,0,-0.2">
-            <HamburgerMenu:HamburgerMenuItem Name="main"  Height="40" Background="#aed86e"  Text="Главная страница" Selected="main_Selected"/>
+        <Frame Name="Frame"  HorizontalAlignment="Left" Height="538" VerticalAlignment="Top" Width="669" Margin="49,0,0,0" />
+
+        <HamburgerMenu:HamburgerMenu Name="HambMenu" MenuIconColor="#87ae4b" Background="#1e2023" Opacity="0.9" SelectionIndicatorColor="#87ae4b"  MenuItemForeground="WhiteSmoke" HorizontalAlignment="Left" Margin="-1,0,0,-0.2">
+
+            <HamburgerMenu:HamburgerMenuItem Name="main"  Height="40" Background="#aed86e" Opacity="100" Text="Главная страница" Selected="main_Selected"/>
             <HamburgerMenu:HamburgerMenuItem Name="mainButtonHamb"  Height="40" Background="#aed86e"  Text="Выбор мест в кинотеатре" Selected="mainButtonHamb_Selected"/>
             <HamburgerMenu:HamburgerMenuItem Name="groupButtonHamb"  Height="40" Background="#aed86e"  Text="Ваша бронь"/>
             <HamburgerMenu:HamburgerMenuItem Name="PostQueue"   Height="40" Background="#aed86e"  Text="Администратор"/>
         </HamburgerMenu:HamburgerMenu>
-
+       
 
 
     </Grid>

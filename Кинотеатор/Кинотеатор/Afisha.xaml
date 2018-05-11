@@ -8,43 +8,76 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Afisha" Height="538" Width="669" Background="#1e2023">
 
-    <Grid>
-        <Label Content = "Выберите кинокартину на которую вы желайте пойти" Foreground="White" FontSize="17" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="433"/>
-        <ScrollViewer Margin="0,47,9.8,-0.4" >
+    <Grid Margin="0,0,-0.2,-0.4">
+        <Label Foreground="WhiteSmoke" FontSize="19"  Content="Выберите кинокартину на которую желайте пойти" HorizontalAlignment="Center" VerticalAlignment="Top" Width="669" Height="45" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Name="Zagol" HorizontalAlignment="Left" Foreground="White" FontSize="20" Margin="0,32,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="34" Width="165"/>
+        <TextBlock Name="City" HorizontalAlignment="Left" FontSize="20" Foreground="White" Margin="170,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="96"/>
+
+
+
+
+        <ScrollViewer Margin="0,71,10,0" >
             <StackPanel HorizontalAlignment = "Left">
 
-                <StackPanel Orientation = "Vertical" >
-                    <Label VerticalContentAlignment ="top" HorizontalContentAlignment="Center" Content="Твоё имя" Foreground="White" FontSize="25" Width="644" Height="58"/>
-                    <Image Source="Imege_Resources/Msit.png" Height="291" Margin="0,0,0.2,0" Width="638" Stretch="Fill"/>
-                    <Label VerticalContentAlignment ="Center" HorizontalContentAlignment="Left" Content="Описание" Foreground="White" FontSize="25" Width="644" Height="45">
+                <StackPanel Orientation = "Vertical" Height="639" >
+                    <Label VerticalContentAlignment ="Bottom" Content="Твоё имя" HorizontalContentAlignment="Center"  Foreground="White" FontSize="25" Width="644" Height="48">
+
                     </Label>
-                    <TextBlock TextWrapping="Wrap" Height="97" x:Name="Opisanie1" Foreground="White"></TextBlock>
-                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="100" Width="669"/>
+                    <Image Source="Imege_Resources/Msit.png" Height="291" Margin="0,0,0.2,0" Width="638" Stretch="Fill"/>
+                    <Label VerticalContentAlignment ="Center" HorizontalContentAlignment="Left" Content="Описание: " Foreground="White" FontSize="25" Width="644" Height="45">
+                    </Label>
+                    <TextBlock TextWrapping="Wrap" Height="135" x:Name="Opisanie1" Foreground="White"></TextBlock>
+                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="106" Width="669">
+                        <Button Name="Tekets" Background="#1e2023" Foreground="White" Content="Выбор сеанса" Margin="459.2,34.2,29,30.4" />
+
+                    </Border>
 
                 </StackPanel>
-               
+
                 <StackPanel Orientation = "Vertical" >
-                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Left"  Foreground="White" FontSize="17" Content="Мстители: Война бесконечности" Width="390" />
+                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Center"  Foreground="White" FontSize="25" Content="Мстители: Война бесконечности" Width="390" />
                     <Image Source="Imege_Resources/3.png"  Height="291" Margin="0,0,0.2,0" Width="638" Stretch="Fill"/>
                     <Label VerticalContentAlignment ="Center" HorizontalContentAlignment="Left" Content="Описание" Foreground="White" FontSize="25" Width="644" Height="45">
                     </Label>
                     <TextBlock TextWrapping="Wrap" Height="140" Name="Opisanie2" Foreground="White"></TextBlock>
-                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="100" Width="669"/>
+                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="106" Width="669">
+                        <Button Background="#1e2023" Foreground="White" Content="Выбор сеанса" Margin="459.2,34.2,29,30.4" />
+
+                    </Border>
+
+                </StackPanel>
+                <StackPanel Orientation = "Vertical" >
+                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Center" Foreground="White" FontSize="25" Content="Зеркола" Width="390" />
+                    <Image Source="Imege_Resources/4.png" Height="291" Margin="0,0,0.2,0" Width="638" Stretch="Fill"/>
+                    <Label VerticalContentAlignment ="Center" HorizontalContentAlignment="Left" Content="Описание" Foreground="White" FontSize="25" Width="644" Height="45">
+                    </Label>
+                    <TextBlock TextWrapping="Wrap" Height="150" Name="Opisanie3" Foreground="White"></TextBlock>
+                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="106" Width="669">
+                        <Button Background="#1e2023" Foreground="White" Content="Выбор сеанса" Margin="459.2,34.2,29,30.4" />
+
+                    </Border>
 
                 </StackPanel>
                 <StackPanel Orientation = "Vertical" >
 
-                    <Image Source="Imege_Resources/3.png" Height="194" Margin="0,0,0.2,0" Width="255" Stretch="Fill"/>
-                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Left" Content="HYI" Width="390" />
+                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Center" Foreground="White" FontSize="25" Content="Такси 5" Width="390" />
+                    <Image Source="Imege_Resources/5.png" Height="380" Margin="0,0,0.2,0" Width="500" Stretch="Fill"/>
+                    <Label VerticalContentAlignment ="Center" HorizontalContentAlignment="Left" Content="Описание" Foreground="White" FontSize="25" Width="644" Height="45">
+                    </Label>
+                    <TextBlock TextWrapping="Wrap" Height="100" Name="Opisanie4" Foreground="White"></TextBlock>
+                    <Border BorderBrush="#1e2023"  BorderThickness="1" Height="106" Width="669">
+                        <Button Background="#1e2023" Foreground="White" Content="Выбор сеанса" Margin="459.2,34.2,29,30.4" />
 
-                </StackPanel>
-                <StackPanel Orientation = "Vertical" >
-
-                    <Image Source="Imege_Resources/3.png" Height="194" Margin="0,0,0.2,0" Width="255" Stretch="Fill"/>
-                    <Label VerticalContentAlignment = "Top" HorizontalContentAlignment="Left" Content="HYI" Width="390" />
+                    </Border>
 
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
+
+       
+
+
+
+
     </Grid>
 </Page>

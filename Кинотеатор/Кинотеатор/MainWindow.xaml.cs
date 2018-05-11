@@ -27,6 +27,8 @@ namespace Кинотеатор
         {
             InitializeComponent();
             Frame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
+            News_Pars news_Pars = new News_Pars();
+            news_Pars.UpDateAdapter();
         }
 
         private void main_Selected(object sender, RoutedEventArgs e)
