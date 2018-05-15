@@ -9,5 +9,8 @@ namespace Кинотеатор
    public class List_Peremen
     {
         public string Image;
+        public string name;
+        public string Image_F;
+        public string Name_F;
     }
 }

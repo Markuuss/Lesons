@@ -29,6 +29,8 @@ namespace Кинотеатор
             Frame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
             News_Pars news_Pars = new News_Pars();
             news_Pars.UpDateAdapter();
+            Cinema_Pars cinema_Pars = new Cinema_Pars();
+            cinema_Pars.CinemaParsing();
         }
 
         private void main_Selected(object sender, RoutedEventArgs e)

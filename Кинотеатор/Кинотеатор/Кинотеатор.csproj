@@ -65,6 +65,7 @@
       <DependentUpon>Afisha.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cinema\Cinema_Pars.cs" />
+    <Compile Include="Cinema\Future_Cinema.cs" />
     <Compile Include="Cinema\List_Peremen.cs" />
     <Compile Include="News\News_Pars.cs" />
     <Compile Include="News\Peremen.cs" />

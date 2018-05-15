@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Кинотеатор"
         xmlns:HamburgerMenu="clr-namespace:HamburgerMenu;assembly=HamburgerMenu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="568.4" Width="725" Background="#1e2023" ResizeMode="NoResize">
+        Title="MainWindow" Height="700" Width="900" Background="#1e2023" ResizeMode="NoResize">
     <Grid>
-        <Frame Name="Frame"  HorizontalAlignment="Left" Height="538" VerticalAlignment="Top" Width="669" Margin="49,0,0,0" />
+        <Frame Name="Frame"  HorizontalAlignment="Left" Height="671" VerticalAlignment="Top" Width="845" Margin="49,0,0,0" />
 
         <HamburgerMenu:HamburgerMenu Name="HambMenu" MenuIconColor="#87ae4b" Background="#1e2023" Opacity="0.9" SelectionIndicatorColor="#87ae4b"  MenuItemForeground="WhiteSmoke" HorizontalAlignment="Left" Margin="-1,0,0,-0.2">
 
@@ -17,7 +17,7 @@
             <HamburgerMenu:HamburgerMenuItem Name="groupButtonHamb"  Height="40" Background="#aed86e"  Text="Ваша бронь"/>
             <HamburgerMenu:HamburgerMenuItem Name="PostQueue"   Height="40" Background="#aed86e"  Text="Администратор"/>
         </HamburgerMenu:HamburgerMenu>
-       
+
 
 
     </Grid>

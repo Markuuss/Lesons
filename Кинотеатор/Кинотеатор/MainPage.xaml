@@ -6,34 +6,40 @@
       xmlns:local="clr-namespace:Кинотеатор"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="MainPage" Height="538" Width="669"  Background="#1e2023">
+      Title="MainPage" Height="700" Width="900"  Background="#1e2023">
 
     <Grid>
         <Label Content="Главное меню" Foreground="White" FontSize="30" HorizontalAlignment="Left" Margin="233,0,0,0" VerticalAlignment="Top"/>
         <Label Content="Новости о кино: " Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="161" Height="34"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="488" VerticalAlignment="Top" Width="659" Margin="0,50,0,-0.4">
+        <ScrollViewer HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="900" Margin="0,50,0,0">
             <StackPanel>
 
                 <StackPanel Orientation = "Horizontal" >
-                    <Image x:Name="Image" HorizontalAlignment="Left" Height="147" Margin="0,50,0,0" VerticalAlignment="Top" Width="158"/>
-                    <TextBlock x:Name="TextNews" Foreground="White" FontSize="16" Margin="0,50,0,0" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="164"/>
-                    <Image Name="Image1" HorizontalAlignment="Left" Height="148" Margin="0,50,0,0" VerticalAlignment="Top" Width="156"/>
-                    <TextBlock x:Name="TextNews1" Foreground="White" FontSize="16" Margin="0,50,0,0" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="164"/>
+                    <Image x:Name="Image" HorizontalAlignment="Left" Height="206" Margin="0,50,0,0" VerticalAlignment="Top" Width="216"/>
+                    <TextBlock x:Name="TextNews" Foreground="White" FontSize="16" Margin="0,50,0,0" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Height="205" Width="242"/>
+                    <Image Name="Image1" HorizontalAlignment="Left"  Height="206" Margin="0,50,0,0" VerticalAlignment="Top" Width="216"/>
+                    <TextBlock x:Name="TextNews1" Foreground="White" FontSize="16" Margin="0,50,0,0" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Height="210" Width="206"/>
                 </StackPanel>
-         
+
                 <StackPanel Orientation = "Horizontal" >
-                    <Image Name="Image2" HorizontalAlignment="Left" Height="148" Margin="0,0,0,0" VerticalAlignment="Top" Width="158"/>
-                    <TextBlock Name="TextNews2" Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="164"/>
-                    <Image Name="Image3" HorizontalAlignment="Left" Height="148" Margin="0,0,0,0" VerticalAlignment="Top" Width="158"/>
-                    <TextBlock Name="TextNews3" Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="164"/>
+                    <Image Name="Image2" HorizontalAlignment="Left" Height="206" Margin="0,0,0,0" VerticalAlignment="Top" Width="216"/>
+                    <TextBlock Name="TextNews2" Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="205" Width="242"></TextBlock>
+                    <Image Name="Image3" HorizontalAlignment="Left" Height="206" Margin="0,0,0,0" VerticalAlignment="Top" Width="216"/>
+                    <TextBlock Name="TextNews3" Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="205" Width="206"/>
                 </StackPanel>
-                
+
                 <StackPanel Orientation = "Vertical" >
-                    <Image Name="Image4" HorizontalAlignment="Center" Height="148" Margin="0,0,150,0" VerticalAlignment="Top" Width="184"/>
-                    <TextBlock x:Name="TextNews4" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="644"/>
+                    <Image x:Name="Image4" HorizontalAlignment="Center" Height="206" Margin="0,0,250,0" VerticalAlignment="Top" Width="273"/>
+                    <TextBlock x:Name="TextNews4" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Height="214" Width="654"/>
+                    <Border Height="125">
+                        <Label Content="Скоро в кино" Foreground="White" FontSize="30"/>
+
+                    </Border>
+                </StackPanel>
+                <StackPanel>
 
                 </StackPanel>
-                
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

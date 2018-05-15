@@ -25,6 +25,8 @@ namespace Кинотеатор
             InitializeComponent();
             News_Pars news_Pars = new News_Pars();
             news_Pars.UpDateAdapter();
+            Future_Cinema future = new Future_Cinema();
+            future.LoadingFutureCinema();
             BitmapImage imageSource = new BitmapImage(new Uri(news_Pars.data[0].Image));
             Image.Source = imageSource;
             BitmapImage imageSource1 = new BitmapImage(new Uri(news_Pars.data[1].Image));
@@ -35,11 +37,11 @@ namespace Кинотеатор
             Image3.Source = imageSource3;
             BitmapImage imageSource4 = new BitmapImage(new Uri(news_Pars.data[4].Image));
             Image4.Source = imageSource4;
-            TextNews.Text = news_Pars.data[0].Zagolovok;
-            TextNews1.Text = news_Pars.data[1].Zagolovok;
-            TextNews2.Text = news_Pars.data[2].Zagolovok;
-            TextNews3.Text = news_Pars.data[3].Zagolovok;
-            TextNews4.Text = news_Pars.data[4].Zagolovok;
+            TextNews.Text = news_Pars.data[0].TextNew;
+            TextNews1.Text = news_Pars.data[1].TextNew;
+            TextNews2.Text = news_Pars.data[2].TextNew;
+            TextNews3.Text = news_Pars.data[3].TextNew;
+            TextNews4.Text = news_Pars.data[4].TextNew;
             
            
         }
