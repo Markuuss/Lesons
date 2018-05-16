@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas Background="Blue" HorizontalAlignment="Left" Height="157" Margin="0,164,0,-0.2" VerticalAlignment="Top" Width="257"/>
+        <Canvas Background="Red" HorizontalAlignment="Left" Height="164" Margin="257,0,0,0" VerticalAlignment="Top" Width="261"/>
+        <Image HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="257"/>
+        <Image HorizontalAlignment="Left" Height="157" Margin="257,164,0,-0.2" VerticalAlignment="Top" Width="261"/>
+        <Polygon Stroke="Blue" StrokeThickness="1" Fill="Blue" 
+Canvas.Left="10" Canvas.Top="150" FillRule="Nonzero"  
+Points="14,200 68,70 110,200 0,125 135,125" Margin="58,-58,221.4,174.8">
+        </Polygon>
+        <Polygon Stroke="Red" StrokeThickness="1" Fill="Red" 
+Canvas.Left="10" Canvas.Top="150" FillRule="Nonzero"  
+Points="14,200 68,70 110,200 0,125 135,125" Margin="322,107,-42.6,9.8">
+        </Polygon>
     </Grid>
 </Window>
