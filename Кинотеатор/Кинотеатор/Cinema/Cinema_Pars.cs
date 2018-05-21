@@ -13,8 +13,7 @@ namespace Кинотеатор
         public List<List_Peremen> Afisha = new List<List_Peremen>();
         public void CinemaParsing()
         {
-            for (int j = 0; j < 20; j++)
-            {
+            
                 HttpWebRequest NewsPars;
                 HttpWebResponse response;
                 HtmlDocument htmlDocument = new HtmlDocument();
@@ -32,19 +31,18 @@ namespace Кинотеатор
                         {
                             if (NewsHtml.ChildNodes[i].ChildNodes[k].Name == "li")
                             {
-                              var image = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[1].ChildNodes[1].Attributes["src"].Value;
-                                var text = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[3].ChildNodes[0].InnerText.Trim();
-
-                                //foreach (HtmlNode item1 in NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes)
-                                //{
-                                //    if (item1.Name == "img")
-                                //    {
-                                //        var image1 = item1.Attributes["src"].Value;
-                                //        Afisha.Add(new List_Peremen() { Image = image1, name = text });
-                                //    }
-
-                                //}
-                                Afisha.Add(new List_Peremen() { Image = image, name = text });
+                                try
+                                {
+                                    var text = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[3].ChildNodes[0].InnerText.Trim();
+                                    var image = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[1].ChildNodes[1].Attributes["src"].Value;
+                                    Afisha.Add(new List_Peremen() { Image = image, name = text });
+                                }
+                                catch
+                                {
+                                    var text = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[3].ChildNodes[0].InnerText.Trim();
+                                    var image = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[1].ChildNodes[3].Attributes["src"].Value;
+                                    Afisha.Add(new List_Peremen() { Image = image, name = text });
+                                }
                             }
                         }
 
@@ -75,7 +73,7 @@ namespace Кинотеатор
             }
             //col-c
 
-        }
+        
     }
     }
     

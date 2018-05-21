@@ -25,8 +25,6 @@ namespace Кинотеатор
             InitializeComponent();
             News_Pars news_Pars = new News_Pars();
             news_Pars.UpDateAdapter();
-            Future_Cinema future = new Future_Cinema();
-            future.LoadingFutureCinema();
             BitmapImage imageSource = new BitmapImage(new Uri(news_Pars.data[0].Image));
             Image.Source = imageSource;
             BitmapImage imageSource1 = new BitmapImage(new Uri(news_Pars.data[1].Image));
@@ -42,8 +40,6 @@ namespace Кинотеатор
             TextNews2.Text = news_Pars.data[2].TextNew;
             TextNews3.Text = news_Pars.data[3].TextNew;
             TextNews4.Text = news_Pars.data[4].TextNew;
-            
-           
         }
         
     }

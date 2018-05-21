@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -20,9 +22,11 @@ namespace Кинотеатор
     /// </summary>
     public partial class MainWindow : Window
     {
+     
         private MainPage mainPage = new MainPage();
         private Cinema cinema = new Cinema();
         private Afisha afisha = new Afisha();
+       
         public MainWindow()
         {
             InitializeComponent();
@@ -31,13 +35,13 @@ namespace Кинотеатор
             news_Pars.UpDateAdapter();
             Cinema_Pars cinema_Pars = new Cinema_Pars();
             cinema_Pars.CinemaParsing();
+          
         }
-
+       
         private void main_Selected(object sender, RoutedEventArgs e)
         {
            Frame.NavigationService.Navigate(mainPage);
-            
-           
+
         }
 
         private void mainButtonHamb_Selected(object sender, RoutedEventArgs e)

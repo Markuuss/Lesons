@@ -61,11 +61,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Afisha.xaml.cs">
+    <Compile Include="Furst and Second Page\Afisha.xaml.cs">
       <DependentUpon>Afisha.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cinema\Cinema_Pars.cs" />
-    <Compile Include="Cinema\Future_Cinema.cs" />
     <Compile Include="Cinema\List_Peremen.cs" />
     <Compile Include="News\News_Pars.cs" />
     <Compile Include="News\Peremen.cs" />
@@ -75,18 +74,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Time_Seans.xaml.cs">
+    <Compile Include="Time and Seans\Time_Seans.xaml.cs">
       <DependentUpon>Time_Seans.xaml</DependentUpon>
     </Compile>
-    <Page Include="Afisha.xaml">
+    <Page Include="Furst and Second Page\Afisha.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Cinema.xaml">
+    <Page Include="Time and Seans\Cinema.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Furst and Second Page\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,17 +97,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Cinema.xaml.cs">
+    <Compile Include="Time and Seans\Cinema.xaml.cs">
       <DependentUpon>Cinema.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Furst and Second Page\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Time_Seans.xaml">
+    <Page Include="Time and Seans\Time_Seans.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imege_Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Loading\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
