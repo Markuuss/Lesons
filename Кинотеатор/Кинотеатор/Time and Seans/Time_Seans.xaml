@@ -6,11 +6,15 @@
       xmlns:local="clr-namespace:Кинотеатор"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Time_Seans"  Height="538" Width="669" Background="#1e2023">
+      Title="Time_Seans"  Height="700" Width="900" Background="#1e2023">
 
     <Grid>
-        <Label Content="Дневной сеанс" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Вечерний сеанс" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="34,320,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label Content="Дневной сеанс" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="34,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Вечерний сеанс" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="34,381,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button Name="Back" Content="Назад" FontSize="18" Foreground="White" Background="#1e2023" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="53" Click="Back_Click"/>
+
+
+
 
     </Grid>
 </Page>

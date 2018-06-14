@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace Кинотеатор
 {
     /// <summary>
-    /// Логика взаимодействия для Time_Seans.xaml
+    /// Логика взаимодействия для Authi.xaml
     /// </summary>
-    public partial class Time_Seans : Page
+    public partial class Authi : Page
     {
-        Afisha afisha;
-        public Time_Seans()
+        public Authi()
         {
-        
             InitializeComponent();
-        }
-
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            afisha = new Afisha();
-            NavigationService.Navigate(afisha);
         }
     }
 }

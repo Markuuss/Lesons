@@ -61,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Authi.xaml.cs">
+      <DependentUpon>Authi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Furst and Second Page\Afisha.xaml.cs">
       <DependentUpon>Afisha.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,10 @@
     <Compile Include="Time and Seans\Time_Seans.xaml.cs">
       <DependentUpon>Time_Seans.xaml</DependentUpon>
     </Compile>
+    <Page Include="Authi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Furst and Second Page\Afisha.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,7 +160,14 @@
     <Resource Include="Imege_Resources\5.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Authi\" />
     <Folder Include="Loading\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

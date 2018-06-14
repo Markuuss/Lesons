@@ -17,6 +17,7 @@
             <HamburgerMenu:HamburgerMenuItem Name="mainButtonHamb"  Height="40" Background="#aed86e"  Text="Выбор мест в кинотеатре" Selected="mainButtonHamb_Selected"/>
             <HamburgerMenu:HamburgerMenuItem Name="groupButtonHamb"  Height="40" Background="#aed86e"  Text="Ваша бронь"/>
             <HamburgerMenu:HamburgerMenuItem Name="PostQueue"   Height="40" Background="#aed86e"  Text="Администратор"/>
+            <HamburgerMenu:HamburgerMenuItem Name="Autifical"   Height="40" Background="#aed86e"  Text="Войти в личный кабинет" Selected="Autifical_Selected"/>
         </HamburgerMenu:HamburgerMenu>
         
 
