@@ -6,33 +6,22 @@
       xmlns:local="clr-namespace:Кинотеатор"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Cinema" Height="538" Width="669"  Background="#1e2023">
+      Title="Cinema" Height="671" Width="845"  Background="#1e2023">
 
     <Grid>
-        <Label Content="Количество мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="34" Width="156"/>
-        <Label Content="Количество занятых мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="204,10,0,0" VerticalAlignment="Top" Height="34" Width="208"/>
-        <Label Content="Количество свободных мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="417,10,0,0" VerticalAlignment="Top" Height="34" Width="242"/>
-        <Label Content="1"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
-        <Label Content="2"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
-        <Label Content="3" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
-        <Label Content="4" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
-        <Label Content="5" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
-        <Label Content="6" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top"/>
-        <Label Content="7" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top"/>
-        <Label Content="8" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top"/>
-        <Label Content="9" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top"/>
-        <Label Content="10" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,370,0,0" VerticalAlignment="Top"/>
-        <Label Content="1"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,88,0,0" VerticalAlignment="Top"/>
-        <Label Content="2"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,123,0,0" VerticalAlignment="Top"/>
-        <Label Content="3" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,158,0,0" VerticalAlignment="Top"/>
-        <Label Content="4" Foreground="White" FontSize="15" Margin="640,193,10.8,0" VerticalAlignment="Top"/>
-        <Label Content="5" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,228,0,0" VerticalAlignment="Top"/>
-        <Label Content="6" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,258,0,0" VerticalAlignment="Top"/>
-        <Label Content="7" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,288,0,0" VerticalAlignment="Top"/>
-        <Label Content="8" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,318,0,0" VerticalAlignment="Top"/>
-        <Label Content="9" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,353,0,0" VerticalAlignment="Top"/>
-        <Label Content="10" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="640,383,0,0" VerticalAlignment="Top"/>
-        <Label Content="Экран" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="301,453,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label  Content="Количество мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="58,32,0,0" VerticalAlignment="Top" Height="34" Width="156"/>
+        <Label  Content="Количество занятых мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="307,32,0,0" VerticalAlignment="Top" Height="34" Width="192"/>
+        <Label  Content="Количество свободных мест :" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="557,32,0,0" VerticalAlignment="Top" Height="34" Width="217"/>
+        <Label Name="Mest" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="201,32,0,612.2" Width="32"></Label>
+        <Label Name="free" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="774,32,0,612.2" Width="32"></Label>
+        <Label Name="Non" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="499,32,0,612.2" Width="32"></Label>
+        <Label Name="Rad1" Content="1"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="24" Height="34"/>
+        <Label Name="Rad2" Content="2"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="24" Height="36"/>
+        <Label Name="Rad3" Content="3" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="24" Height="34"/>
+        <Label Content="1"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="807,82,0,0" VerticalAlignment="Top" Width="24" Height="34"/>
+        <Label Content="2"  Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="807,128,0,0" VerticalAlignment="Top" Width="24" Height="34"/>
+        <Label Content="3" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="807,167,0,0" VerticalAlignment="Top" Width="24" Height="35"/>
+        <Label Content="Экран" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="408,501,0,0" VerticalAlignment="Top" Width="82" Height="34"/>
         <Path Stroke="White" Margin="37.023,447.371,38.168,-29.337" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
             <Path.RenderTransform>
                 <TransformGroup>
@@ -50,276 +39,114 @@
                 </PathGeometry>
             </Path.Data>
         </Path>
-        <!----><!---->
-            <Button Content="1" HorizontalAlignment="Left" Margin="100,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="130,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="160,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="190,75,0,0" VerticalAlignment="Top" Width="25" Height="25" RenderTransformOrigin="0.5,0.5"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="220,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="250,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="280,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="310,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="340,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="400,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="370,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="430,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="460,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="490,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="520,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="550,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+
+        <Button Name="Rad2_Namber1" Content="1" HorizontalAlignment="Left" Margin="144,125,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad2_Namber2" Content="2" HorizontalAlignment="Left" Margin="182,125,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad2_Namber3" Content="3" HorizontalAlignment="Left" Margin="219,125,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad2_Namber4" Content="4" HorizontalAlignment="Left" Margin="256,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber5" Content="5" HorizontalAlignment="Left" Margin="294,125,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad2_Namber6" Content="6" HorizontalAlignment="Left" Margin="331,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber7" Content="7" HorizontalAlignment="Left" Margin="368,125,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad2_Namber8" Content="8" HorizontalAlignment="Left" Margin="407,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber9" Content="9" HorizontalAlignment="Left" Margin="445,125,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad2_Namber10" Content="10" HorizontalAlignment="Left" Margin="482,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber11" Content="11" HorizontalAlignment="Left" Margin="520,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber12" Content="12" HorizontalAlignment="Left" Margin="557,125,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad2_Namber13" Content="13" HorizontalAlignment="Left" Margin="594,125,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad2_Namber14" Content="14" HorizontalAlignment="Left" Margin="634,125,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad2_Namber15" Content="15" HorizontalAlignment="Left" Margin="671,125,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+
         <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="72,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="102,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="132,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="162,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="192,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="222,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="252,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="282,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="312,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="342,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="372,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="402,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="432,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="462,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="492,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="520,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="550,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="580,110,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Name="Rad3_Namber1"  Content="1" HorizontalAlignment="Left" Margin="235,160,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad3_Namber2" Content="2" HorizontalAlignment="Left" Margin="274,160,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad3_Namber3" Content="3" HorizontalAlignment="Left" Margin="308,160,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad3_Namber4" Content="4" HorizontalAlignment="Left" Margin="345,160,0,0" VerticalAlignment="Top" Width="34" Height="28"/>
+        <Button Name="Rad3_Namber5" Content="5" HorizontalAlignment="Left" Margin="384,160,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad3_Namber6" Content="6" HorizontalAlignment="Left" Margin="423,160,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad3_Namber7" Content="7" HorizontalAlignment="Left" Margin="459,160,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad3_Namber8" Content="8" HorizontalAlignment="Left" Margin="498,160,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad3_Namber9" Content="9" HorizontalAlignment="Left" Margin="535,160,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad3_Namber10" Content="10" HorizontalAlignment="Left" Margin="573,160,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+
+
         <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="44,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="74,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="132,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="162,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="192,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="222,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="252,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="282,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="312,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="342,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="372,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="402,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="432,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="462,149,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="492,150,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="520,150,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="550,150,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="19" HorizontalAlignment="Left" Margin="580,150,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="20" HorizontalAlignment="Left" Margin="610,150,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Name="Rad1_Namber1" Content="1" HorizontalAlignment="Left" Margin="127,86,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad1_Namber2" Content="2" HorizontalAlignment="Left" Margin="164,86,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad1_Namber3" Content="3" HorizontalAlignment="Left" Margin="201,86,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad1_Namber4" Content="4" HorizontalAlignment="Left" Margin="241,86,0,0" VerticalAlignment="Top" Width="32" Height="28" RenderTransformOrigin="0.5,0.5"/>
+        <Button Name="Rad1_Namber5" Content="5" HorizontalAlignment="Left" Margin="278,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber6" Content="6" HorizontalAlignment="Left" Margin="317,86,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad1_Namber7" Content="7" HorizontalAlignment="Left" Margin="353,86,0,0" VerticalAlignment="Top" Width="33" Height="28"/>
+        <Button Name="Rad1_Namber8" Content="8" HorizontalAlignment="Left" Margin="391,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber9" Content="9" HorizontalAlignment="Left" Margin="429,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber10" Content="10" HorizontalAlignment="Left" Margin="506,86,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
+        <Button Name="Rad1_Namber11" Content="11" HorizontalAlignment="Left" Margin="467,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber12" Content="12" HorizontalAlignment="Left" Margin="543,86,0,0" VerticalAlignment="Top" Width="31" Height="28"/>
+        <Button Name="Rad1_Namber13" Content="13" HorizontalAlignment="Left" Margin="580,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber14" Content="14" HorizontalAlignment="Left" Margin="618,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber15" Content="15" HorizontalAlignment="Left" Margin="656,86,0,0" VerticalAlignment="Top" Width="32" Height="28"/>
+        <Button Name="Rad1_Namber16" Content="16" HorizontalAlignment="Left" Margin="695,86,0,0" VerticalAlignment="Top" Width="30" Height="28"/>
         <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="44,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="74,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="104,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="132,184,0,0" VerticalAlignment="Top" Width="25" Height="25" RenderTransformOrigin="0.5,0.5"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="162,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="190,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="222,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="252,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="282,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="342,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="312,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="372,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="402,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="432,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="462,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="492,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="520,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="550,184,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="19" HorizontalAlignment="Left" Margin="580,185,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="20" HorizontalAlignment="Left" Margin="610,185,0,0" VerticalAlignment="Top" Width="25" Height="25" RenderTransformOrigin="1.736,0.816"/>
+
         <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="44,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="74,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="132,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="162,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="192,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="222,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="252,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="282,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="312,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="342,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="372,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="402,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="432,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="462,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="490,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="520,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="550,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="19" HorizontalAlignment="Left" Margin="580,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="20" HorizontalAlignment="Left" Margin="610,222,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+
         <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="44,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="74,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="132,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="162,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="192,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="222,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="252,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="282,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="312,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="342,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="372,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="402,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="432,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="462,261,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="492,262,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="520,262,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="550,262,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="19" HorizontalAlignment="Left" Margin="580,262,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="20" HorizontalAlignment="Left" Margin="610,262,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="100,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="130,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="160,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="190,75,0,0" VerticalAlignment="Top" Width="25" Height="25" RenderTransformOrigin="0.5,0.5"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="220,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="250,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="280,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="310,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="340,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="400,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="370,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="430,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="460,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="490,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="520,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="550,75,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="72,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="102,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="132,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="162,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="192,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="222,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="252,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="282,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="312,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="342,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="372,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="402,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="432,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="462,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="492,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="520,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="550,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="580,301,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <!---->
-        <Button Content="1" HorizontalAlignment="Left" Margin="44,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="74,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="102,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="132,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="162,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="192,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="222,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="252,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="282,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="10" HorizontalAlignment="Left" Margin="312,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="11" HorizontalAlignment="Left" Margin="342,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="372,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="13" HorizontalAlignment="Left" Margin="402,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="14" HorizontalAlignment="Left" Margin="432,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="15" HorizontalAlignment="Left" Margin="462,339,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="16" HorizontalAlignment="Left" Margin="492,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="17" HorizontalAlignment="Left" Margin="520,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="18" HorizontalAlignment="Left" Margin="550,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="19" HorizontalAlignment="Left" Margin="580,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-        <Button Content="20" HorizontalAlignment="Left" Margin="610,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
-<!---->
-         <Button Content="VIP" HorizontalAlignment="Left" Margin="46,387,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
-             <Button.RenderTransform>
-                 <TransformGroup>
-                     <ScaleTransform/>
-                     <SkewTransform/>
-                     <RotateTransform Angle="-35.273"/>
-                     <TranslateTransform/>
-                 </TransformGroup>
-             </Button.RenderTransform>
-         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="184,385,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button Name="Vip1" Content="VIP" HorizontalAlignment="Left" Margin="60,426,0,0" VerticalAlignment="Top" Width="72" Height="29" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-38.39"/>
+                    <ScaleTransform ScaleY="1.058" ScaleX="0.945"/>
+                    <SkewTransform AngleX="10.464"/>
+                    <RotateTransform Angle="-30.21"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="121,385,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button Name="Vip2" Content="VIP" HorizontalAlignment="Left" Margin="136,378,0,0" VerticalAlignment="Top" Width="73" Height="29" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-36.644"/>
+                    <ScaleTransform ScaleY="1.063" ScaleX="0.941"/>
+                    <SkewTransform AngleX="10.625"/>
+                    <RotateTransform Angle="-31.479"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="184,385,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button Content="VIP" Name="Vip3" HorizontalAlignment="Left" Margin="764,430,0,0" VerticalAlignment="Top" Width="73" Height="28" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-38.39"/>
+                    <ScaleTransform ScaleY="1.109" ScaleX="0.902"/>
+                    <SkewTransform AngleX="-10.951"/>
+                    <RotateTransform Angle="43.911"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="561,390,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button Name="Vip4" Content="VIP" HorizontalAlignment="Left" Margin="682,372,0,0" VerticalAlignment="Top" Width="73" Height="28" RenderTransformOrigin="1.279,1.715">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="49.468"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleY="1.107" ScaleX="0.903"/>
+                    <SkewTransform AngleX="-10.967"/>
+                    <RotateTransform Angle="43.634"/>
+                    <TranslateTransform X="-37.299" Y="20.726"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="184,385,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button Name="Vip5" Content="VIP" HorizontalAlignment="Left" Margin="199,336,0,0" VerticalAlignment="Top" Width="68" Height="28" RenderTransformOrigin="-0.405,-3.111">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-38.39"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleY="1.041" ScaleX="0.961"/>
+                    <SkewTransform AngleX="6.227"/>
+                    <RotateTransform Angle="-35.318"/>
+                    <TranslateTransform X="-45.692" Y="49.304"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="506,391,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
+        <Button  Name ="Vip6" Content="VIP" HorizontalAlignment="Left" Margin="633,309,0,0" VerticalAlignment="Top" Width="72" Height="28" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="49.195"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="184,385,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-38.39"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
-        <Button Content="VIP" HorizontalAlignment="Left" Margin="451,394,0,0" VerticalAlignment="Top" Width="53" Height="25" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="50.857"/>
+                    <ScaleTransform ScaleY="1.114" ScaleX="0.897"/>
+                    <SkewTransform AngleX="-10.857"/>
+                    <RotateTransform Angle="45.323"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>

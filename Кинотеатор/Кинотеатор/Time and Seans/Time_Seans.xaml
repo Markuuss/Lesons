@@ -12,6 +12,16 @@
         <Label Content="Дневной сеанс" FontSize="20" Foreground="White" HorizontalAlignment="Left" Margin="34,68,0,0" VerticalAlignment="Top"/>
         <Label Content="Вечерний сеанс" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="34,381,0,0" VerticalAlignment="Top" Width="181"/>
         <Button Name="Back" Content="Назад" FontSize="18" Foreground="White" Background="#1e2023" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="53" Click="Back_Click"/>
+        <Button Name="time1210" Content="12:10" HorizontalAlignment="Left" Margin="34,110,0,0" VerticalAlignment="Top" Width="96" Height="36" />
+        <Button Name="time1410" Content="14:10" HorizontalAlignment="Left" Margin="151,110,0,0" VerticalAlignment="Top" Width="96" Height="36"/>
+        <Button  Name="time1635" Content="16:35" HorizontalAlignment="Left" Margin="34,171,0,0" VerticalAlignment="Top" Width="96" Height="38" />
+        <Button  Name="time1835" Content="18:35" HorizontalAlignment="Left" Margin="273,171,0,0" VerticalAlignment="Top" Width="96" Height="38" />
+        <Button Name="time1940" Content="19:40" HorizontalAlignment="Left" Margin="273,108,0,0" VerticalAlignment="Top" Width="96" Height="38" />
+        
+        
+        <Button Name="time2141" Content="21:41" HorizontalAlignment="Left" Margin="34,448,0,0" VerticalAlignment="Top" Width="96" Height="38" />
+        <Button Name="time0010" Content="00:10" HorizontalAlignment="Left" Margin="213,448,0,0" VerticalAlignment="Top" Width="96" Height="38" />
+        <TextBlock Name="Usee" HorizontalAlignment="Left" Foreground="White" Margin="369,308,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="178" Width="247"/>
 
 
 

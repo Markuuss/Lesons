@@ -46,6 +46,8 @@ namespace Кинотеатор
             //streamReader1.Close();
             Cinema_Pars cinema_Pars = new Cinema_Pars();
             cinema_Pars.CinemaParsing();
+            Pars_opisan pars_ = new Pars_opisan();
+            pars_.Opisan();
             
 
             
@@ -53,18 +55,24 @@ namespace Кинотеатор
             
             for (int i = 0; i <15 ; i++)
             {
-                TextBlock textBlock = new TextBlock();
+            TextBlock textBlock = new TextBlock();
+                TextBlock text = new TextBlock();
             BitmapImage imageSource = new BitmapImage(new Uri(cinema_Pars.Afisha[i].Image));
             Image image = new Image();
-            image.Width = 300;
+            image.HorizontalAlignment = HorizontalAlignment.Left;
+            image.Width = 150;
             image.Source = imageSource;
-            Stack.Children.Add(image);
-                
-                textBlock.Foreground= new System.Windows.Controls.TextBlock().Foreground = System.Windows.Media.Brushes.White;
-                textBlock.FontSize = 18;
+            
+                textBlock.Foreground = new System.Windows.Controls.TextBlock().Foreground = System.Windows.Media.Brushes.White;
+                textBlock.FontSize = 23;
                 textBlock.HorizontalAlignment = HorizontalAlignment.Center;
+                textBlock.VerticalAlignment = VerticalAlignment.Top;
                 textBlock.Text = cinema_Pars.Afisha[i].name;
-                Stack.Children.Add(textBlock);
+                text.Foreground = new System.Windows.Controls.TextBlock().Foreground = System.Windows.Media.Brushes.White;
+                text.FontSize = 15;
+                text.HorizontalAlignment = HorizontalAlignment.Center;
+                text.VerticalAlignment = VerticalAlignment.Top;
+                text.Text = pars_.Opisa[i].Opisanie;
                 var butto=new Button();
                 for (int j = 0; j < buttons.Length; j++)
                 {
@@ -76,16 +84,20 @@ namespace Кинотеатор
                         Background = System.Windows.Media.Brushes.Black,
                         Foreground =System.Windows.Media.Brushes.White,
                         HorizontalAlignment = HorizontalAlignment.Right,
+                        Tag = textBlock.Text
                     };
                     buttons[i] = butto;
                 }
+                Stack.Children.Add(textBlock);
+                Stack.Children.Add(text);
+                Stack.Children.Add(image);
                 Stack.Children.Add(butto);
-
             }
             var button = new Button();
-            for (int i = 0; i <buttons.Length; i++)
+            for ( int i = 0; i <buttons.Length-1; i++)
             {
                 buttons[i].Click += (e, s) => {
+                    time_Seans = new Time_Seans(buttons[i].Tag.ToString());
                     NavigationService.Navigate(time_Seans);
                 };
             }

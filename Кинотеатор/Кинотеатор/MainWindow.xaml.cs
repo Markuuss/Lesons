@@ -27,8 +27,10 @@ namespace Кинотеатор
         private Cinema cinema = new Cinema();
         private Afisha afisha = new Afisha();
         private Authi authi = new Authi();
+        private Administration administration = new Administration();
         
-      
+       
+
         public MainWindow()
         {
             InitializeComponent();
@@ -37,26 +39,32 @@ namespace Кинотеатор
             news_Pars.UpDateAdapter();
             Cinema_Pars cinema_Pars = new Cinema_Pars();
             cinema_Pars.CinemaParsing();
+            authi.Login+=administration.Login_stat;
             
           
         }
        
         private void main_Selected(object sender, RoutedEventArgs e)
         {
-          Frame.NavigationService.Navigate(mainPage);
+          Frame.NavigationService.Navigate(authi);
 
         }
 
         private void mainButtonHamb_Selected(object sender, RoutedEventArgs e)
         {
-            Frame.NavigationService.Navigate(afisha);
+            Frame.NavigationService.Navigate(mainPage);
 
 
         }
 
         private void Autifical_Selected(object sender, RoutedEventArgs e)
         {
-            Frame.NavigationService.Navigate(authi);
+            Frame.NavigationService.Navigate(administration);
+        }
+
+        private void PostQueue_Selected(object sender, RoutedEventArgs e)
+        {
+            Frame.NavigationService.Navigate(afisha);
         }
     }
 }

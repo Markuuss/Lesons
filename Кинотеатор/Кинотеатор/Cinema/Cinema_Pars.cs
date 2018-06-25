@@ -10,11 +10,13 @@ namespace Кинотеатор
 {
     public class Cinema_Pars
     {
+      
         public List<List_Peremen> Afisha = new List<List_Peremen>();
+        
         public void CinemaParsing()
         {
             
-                HttpWebRequest NewsPars;
+        HttpWebRequest NewsPars;
                 HttpWebResponse response;
                 HtmlDocument htmlDocument = new HtmlDocument();
                 string url = "https://afisha.tut.by/film/";
@@ -35,42 +37,25 @@ namespace Кинотеатор
                                 {
                                     var text = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[3].ChildNodes[0].InnerText.Trim();
                                     var image = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[1].ChildNodes[1].Attributes["src"].Value;
+                                
                                     Afisha.Add(new List_Peremen() { Image = image, name = text });
                                 }
                                 catch
                                 {
                                     var text = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[3].ChildNodes[0].InnerText.Trim();
                                     var image = NewsHtml.ChildNodes[i].ChildNodes[k].ChildNodes[1].ChildNodes[3].Attributes["src"].Value;
-                                    Afisha.Add(new List_Peremen() { Image = image, name = text });
+                                Afisha.Add(new List_Peremen() { Image = image, name = text });
                                 }
                             }
                         }
 
                     }
                 }
-                //foreach (HtmlNode item in NewsHtml.ChildNodes)
-                //{
+           
+         
 
 
-                //    if (item.Name == "li")
-                //    {
-                //        var image = item.ChildNodes[1].ChildNodes[1].ChildNodes[1];
-                //        var text = item.ChildNodes[1].ChildNodes[3].ChildNodes[0].InnerText.Trim();
-
-                //        foreach (HtmlNode item1 in image.ChildNodes)
-                //        {
-                //            if (item1.Name == "img")
-                //            {
-                //                var image1 = item1.Attributes["src"].Value;
-                //                Afisha.Add(new List_Peremen() { Image = image1, name = text });
-                //            }
-
-                //        }
-                //    }
-                //}
-
-
-            }
+        }
             //col-c
 
         
